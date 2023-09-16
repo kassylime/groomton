@@ -24,7 +24,7 @@ public class day5 {
             cost.add(new double[]{(double) C[i]/ P[i], (double) P[i]});
         }
         Collections.sort(cost, (a, b) -> Double.compare(b[0], a[0]) != 0 ?
-                Double.compare(b[0], a[0]) : Double.compare(b[i], a[i]));
+                Double.compare(b[0], a[0]) : Double.compare(b[1], a[1]));
 
         for(int i = 0; i < N; i++){
             double[] pair = cost.get(i);
